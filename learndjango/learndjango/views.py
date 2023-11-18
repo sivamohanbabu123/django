@@ -5,3 +5,5 @@ def aboutus(request):
 
 def course(request):
   return HttpResponse("<b>welcome to the course page</b>")
+def courseDetails(request,courseid):
+  return HttpResponse(courseid)
