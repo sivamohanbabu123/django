@@ -20,6 +20,6 @@ from learndjango import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('about/',views.aboutus),
-    path('course/',views.course)
+    path('course/<str:courseid>',views.courseDetails),
 
 ]
